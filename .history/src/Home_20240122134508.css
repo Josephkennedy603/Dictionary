@@ -1,0 +1,106 @@
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*x axis */
+    /* justify-content: center;  y axis */
+    background-color:azure;
+    height: 200vh;
+} 
+
+ .search
+ { 
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 35px;
+    margin-top: 30px;
+    width: 70%;
+    border: 1px solid #0080ff;
+ }
+
+ .search input {
+    height: 45px;
+    border: none;
+    border-radius: 35px;
+    text-indent:  10px;
+    width: calc(70vw - 30px);
+    color: #0080ff;   
+ }
+
+input:focus {
+   outline: none;
+}
+
+ .search img {
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+ }
+
+ .information-field {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-top: 60px;
+    border-radius: 30px;
+ }
+
+ .c-head {
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(49, 49, 49, 0.137);
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .c-head img {
+   width: 25px;
+   padding: 10px;
+   margin: 10px;
+   background-color: #0080ff;
+   border-radius: 50%;
+   cursor: pointer;
+ }
+
+ .c-head div:first-of-type {
+   margin: 15px;
+   margin-left: 25px;
+ }
+
+ .c-head p {
+   font-size: larger;
+   font-weight: bold;
+   margin: 0;
+ }
+
+ .c-head span {
+   color: lightgray;
+   margin: 0;
+ }
+
+ .c-body {
+    width: 100%;   
+}
+
+@media (max-width: 500px) {
+   .search {
+      width: 90vw;
+   }
+
+   .search input{
+      width: 80vw
+   }
+   .information-field
+   .container {
+      width: 100vw;
+   }
+
+   .information-field{
+      width: 85vw ;
+   }
+}
